@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 23
+    buildToolsVersion "22.0.1"
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 19
+        versionName "0.0.3"
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources true
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources true
+        }
+
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    allprojects {
+        repositories {
+            mavenCentral()
+        }
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.squareup.okio:okio:1.5.0'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'de.greenrobot:eventbus:2.4.0'
+
+
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+}
