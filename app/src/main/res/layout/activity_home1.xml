@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.and.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/u7"/>
+    <Button
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/u3"
+        android:layout_below="@id/iv"
+        android:layout_alignLeft="@id/iv"
+        android:text="男"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"/>
+    <Button
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/u3"
+        android:layout_below="@id/iv"
+        android:layout_alignRight="@id/iv"
+        android:text="女"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

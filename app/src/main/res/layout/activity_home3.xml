@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.and.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/bt_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/u16"
+        android:text="+添加用药记录"
+        android:textColor="#ffffffff"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bt_add"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/bt_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/u8"
+            android:text="用药提醒"
+            android:textColor="#ffffffff"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="5dp"
+            android:layout_height="5dp"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/bt_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/u8"
+            android:text="用药记录"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@id/title_bar"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="还没有提醒记录，赶快去添加吧"
+        android:textSize="12sp"
+        android:textColor="#44000000"/>
+    <TextView
+        android:layout_below="@id/bt_add"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="当前无记录，请添加"
+        android:textSize="12sp"
+        android:textColor="#44000000"/>
+
+</RelativeLayout>

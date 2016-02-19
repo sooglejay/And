@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/iv_face"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/face" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_face"
+        android:padding="3dp"
+        android:text="刘书琴"
+        android:textColor="#ff000000"
+        android:textSize="12sp" />
+    <ImageView
+        android:id="@+id/iv_place"
+        android:layout_below="@id/tv_name"
+        android:layout_toRightOf="@id/iv_face"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/u23"/>
+
+    <TextView
+        android:id="@+id/tv_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_toRightOf="@id/iv_place"
+        android:padding="3dp"
+        android:text="广州市"
+        android:textColor="#44000000"
+        android:textSize="10sp" />
+    <TextView
+        android:id="@+id/tv_profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_toRightOf="@id/tv_place"
+        android:padding="3dp"
+        android:text="心理咨询师"
+        android:textColor="#44000000"
+        android:textSize="10sp" />
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_place"
+        android:layout_toRightOf="@id/iv_face"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="广州爱灵心理咨询室创办人"
+        android:ellipsize="marquee"
+        android:textColor="#44000000"
+        android:textSize="10sp" />
+
+</RelativeLayout>

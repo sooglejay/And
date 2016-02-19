@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.and.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/bt_left"
+            android:onClick="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/anniu2_u13"
+            android:text="不良反应"
+            android:textColor="#44000000"
+            android:textSize="14sp" />
+
+        <Button
+            android:layout_weight="2"
+            android:id="@+id/bt_right"
+            android:onClick="right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/anniu2_u13"
+            android:text="特殊人群（儿童）"
+            android:textColor="#44000000"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="表现为：\n
+1.副作用 药物在治疗剂量时出现的与治疗目的无关的作用。可能给病人带来不舒适甚至痛苦，一般较轻微，是可以恢复的功能性变化。产生副作用的原因是药物作用的选择性低，作用范围广，当其中某一作用被用来作为治疗目的时，其他作用就可能成为副作用。由于副作用是药物本身所固有的，所以可以预料到，也可以通过合并用药避免或减轻，例如麻黄碱在解除支气管哮喘时，也兴奋中枢神经系统，引起失眠，可同时给予巴比妥类药物，以对抗其兴奋中枢的作用。\n
+2.毒性反应 指用药剂量过大或用药时间过长，或机体对药物过于敏感而产生的对机体有损害的反应，一般较严重。大多是可以预知的。控制用药剂量或给药间隔时间及剂量的个体化是防止毒性反应的主要措施，必要时可停药或改用他药。"
+        android:textSize="12sp"
+        android:textColor="#44000000"/>
+
+</LinearLayout>

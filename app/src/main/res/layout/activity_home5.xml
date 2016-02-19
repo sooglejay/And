@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.and.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/bt_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/anniu2_u13"
+            android:text="用药方法"
+            android:textColor="#44000000"
+            android:textSize="14sp" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/bt_center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/anniu2_u13"
+            android:text="用药次数"
+            android:textColor="#44000000"
+            android:textSize="14sp"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/bt_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/anniu2_u13"
+            android:text="用药时间"
+            android:textColor="#44000000"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" 依从性：艾滋病抗病毒治疗成功的关键\n
+    抗逆转录病毒治疗艾滋病中的依从性\n
+　　艾滋病进行抗逆转录病毒治疗是一个需要长期坚持的过程，病人服药的依从性对于治疗效果具有决定性的作用，如果不规律或不按时服药，产生耐药性的危险很高，因为体内的抗逆转录病毒在药物水平较低时，会大量繁殖。因此，良好的依从性可以减少耐药的出现，使药物抗病毒的作用具有持久性，从而达到更好的疗效。\n
+    依从性是治疗成功的关键\n
+　　抗病毒的依从性是治疗艾滋病成功的关键因素，医学家对治疗依从性的研究显示：“药物依从性水平高者，就有明显的艾滋病病毒下降的结果和较好的临床疗效。”依从性对抗病毒治疗功效的影响见下表：\n
+    表1依从性对抗病毒治疗功效的影响\n
+    依从性（％）　　 病毒载量小于50拷贝/毫升（％）\n
+    95以上             81\n
+    90～95             64\n
+    81～90             50\n
+    70～80             25\n
+    70以下             6\n
+    因此，为确保抗病毒治疗的疗效，至少应保证有95％以上的治疗依从性"
+        android:textSize="12sp"
+        android:textColor="#ff000000"/>
+
+</LinearLayout>

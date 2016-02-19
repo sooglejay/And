@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/iv_face"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/face" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_face"
+        android:padding="3dp"
+        android:text="李华琳 主治医师"
+        android:textColor="#ff000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_toRightOf="@id/iv_face"
+        android:padding="3dp"
+        android:text="感染科 武警河北总队医院"
+        android:textColor="#44000000"
+        android:textSize="10sp" />
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_subject"
+        android:layout_toRightOf="@id/iv_face"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:text="乙型肝炎、丙型肝炎、肺结核、肝炎、肝硬化"
+        android:ellipsize="marquee"
+        android:textColor="#44000000"
+        android:textSize="10sp" />
+    <View
+        android:layout_below="@id/tv_desc"
+        android:layout_toRightOf="@id/iv_face"
+        android:padding="3dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#44000000"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_newprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_toRightOf="@id/iv_face"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:text="1元"
+        android:textColor="#F0CA8D0A"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_oldprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_toRightOf="@id/tv_newprice"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:text="原价：6元"
+        android:textColor="#55000000"
+        android:textSize="10sp" />
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FF3EE13E"
+        android:id="@+id/tv_chance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_alignParentRight="true"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:text="还剩4个机会"
+        android:textColor="#ffffffff"
+        android:textSize="10sp" />
+
+
+
+
+</RelativeLayout>
